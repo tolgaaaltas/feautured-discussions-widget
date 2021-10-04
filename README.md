@@ -4,6 +4,8 @@
 
 A [Flarum](http://flarum.org) extension. Add feautured discussions widget for Feautured Discussions extension
 
+![feautured](https://user-images.githubusercontent.com/79002016/135865379-1f261ff9-4bfe-4dd8-8307-a7bb80b6b7ce.png)
+
 ## Installation
 
 Install with composer:
@@ -16,12 +18,10 @@ composer require justoverclock/feautured-discussions-widget:"*"
 
 ```sh
 composer update justoverclock/feautured-discussions-widget:"*"
-php flarum migrate
 php flarum cache:clear
 ```
 
 ## Links
 
 - [Packagist](https://packagist.org/packages/justoverclock/feautured-discussions-widget)
-- [GitHub](https://github.com/justoverclock/feautured-discussions-widget)
-- [Discuss](https://discuss.flarum.org/d/PUT_DISCUSS_SLUG_HERE)
+- [GitHub](https://github.com/justoverclockl/feautured-discussions-widget)
