@@ -1,10 +1,10 @@
-# Feautured Discussions Widget
+# Featured Discussions Widget
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/justoverclock/feautured-discussions-widget.svg)](https://packagist.org/packages/justoverclock/feautured-discussions-widget) [![Total Downloads](https://img.shields.io/packagist/dt/justoverclock/feautured-discussions-widget.svg)](https://packagist.org/packages/justoverclock/feautured-discussions-widget)
 
-A [Flarum](http://flarum.org) extension. Add feautured discussions widget for Feautured Discussions extension
+A [Flarum](http://flarum.org) extension. Add featured discussions widget for Featured Discussions extension
 
-![feautured](https://user-images.githubusercontent.com/79002016/135865379-1f261ff9-4bfe-4dd8-8307-a7bb80b6b7ce.png)
+![featured](https://user-images.githubusercontent.com/79002016/135865379-1f261ff9-4bfe-4dd8-8307-a7bb80b6b7ce.png)
 
 ## Installation
 
