@@ -1,0 +1,43 @@
+{
+    "name": "justoverclock/feautured-discussions-widget",
+    "description": "Add feautured discussions widget for Feautured Discussions extension",
+    "keywords": [
+        "feautured discussions widget",
+        "afrux",
+        "widget",
+        "feautured"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.0.0",
+        "clarkwinkelmann/flarum-ext-featured-discussions": "*",
+        "afrux/forum-widgets-core": "^0.1.0"
+    },
+    "require-dev": {
+        "flarum/testing": "^1.0.0"
+    },
+    "authors": [
+        {
+            "name": "Marco Colia",
+            "email": "info@flarum.it",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Justoverclock\\FeauturedDiscussionsWidget\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Feautured Discussions Widget",
+            "category": "",
+            "icon": {
+                "name": "fas fa-thumbtack",
+                "backgroundColor": "green",
+                "color": "white"
+            }
+        }
+    }
+}
