@@ -1,3 +1,13 @@
+/*
+ * This file is part of Feautured discussion Widget.
+ *
+ * Copyright (c) 2021 Marco Colia.
+ * https://flarum.it
+ *
+ * For the full copyright and license information, please view the LICENSE.md
+ * file that was distributed with this source code.
+ */
+
 import Widget from 'flarum/extensions/afrux-forum-widgets-core/common/components/Widget';
 import app from 'flarum/forum/app';
 import LoadingIndicator from 'flarum/common/components/LoadingIndicator';
@@ -10,13 +20,14 @@ export default class FeauturedDiscussionsWidget extends Widget {
   }
 
   oncreate(vnode) {
+    const limitFeatured = app.forum.attribute('justoverclock-feautured-discussions-widget.feautLimit') || 5;
     // get posts json
     const feauturedDisc = app.store
       .find('discussions', {
         isFeatured: true,
         sort: '-featuredFrom',
         include: 'user',
-        page: { limit: 5 },
+        page: { limit: limitFeatured },
         filter: { type: 'featured' },
       })
       .then((results) => {
@@ -55,7 +66,7 @@ export default class FeauturedDiscussionsWidget extends Widget {
                 <Link href={app.route.discussion(ftdisc)} className="feautlink">
                   <i class="fas fa-bookmark feauturedDisc"/>{ftdisc.title()}
                 </Link>
-                <div className="feautpostedby"><b>By:</b> {ftdisc.user().displayName()}</div>
+                <div className="feautpostedby"><b>Author:</b> {ftdisc.user().displayName()}</div>
               </li>
             );
           })}
